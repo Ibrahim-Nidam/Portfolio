@@ -4,11 +4,16 @@ export const repos = [
     "name": "Portfolio",
     "description": null,
     "html_url": "https://github.com/Ibrahim-Nidam/Portfolio",
-    "language": null,
-    "languages": [],
+    "language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "HTML",
+      "JavaScript",
+      "CSS"
+    ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2025-10-16T13:13:36Z",
+    "updated_at": "2025-10-16T20:40:03Z",
     "topics": [],
     "fork": false,
     "private": false
