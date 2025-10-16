@@ -29,7 +29,6 @@ env/
 *.sln.docstates
 
 # Build / distribution
-dist/
 build/
 out/
 tmp/
@@ -39,5 +38,3 @@ tmp/
 coverage/
 coverage.xml
 *.cache
-
-!dist/repos.js
