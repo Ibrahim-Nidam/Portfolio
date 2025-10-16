@@ -25,7 +25,7 @@ jobs:
 
       - name: Run repo update script
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MY_TOKEN }}
         run: node scripts/generate-repos.js
 
       - name: Commit and push changes

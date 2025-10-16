@@ -9,7 +9,7 @@ const path = require('path');
 
 const GITHUB_USERNAME = 'Ibrahim-Nidam';
 const GITHUB_API_URL = `https://api.github.com/users/${GITHUB_USERNAME}/repos`;
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+const GITHUB_TOKEN = process.env.MY_TOKEN;
 
 if (!GITHUB_TOKEN) {
   console.error('❌ GITHUB_TOKEN environment variable is not set!');
