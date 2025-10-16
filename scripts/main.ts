@@ -168,8 +168,8 @@ function initRotatingRoles(): void {
 }
 
 /**
- * Custom Cursor Effect
- * Creates a glowing cursor that follows mouse movement
+ * Custom Cursor Effect (Updated for better responsiveness)
+ * Creates a glowing cursor that follows mouse movement smoothly
  */
 function initCustomCursor(): void {
     const cursor = document.querySelector('.cursor-glow') as HTMLElement;
@@ -188,12 +188,12 @@ function initCustomCursor(): void {
 
     // Smooth cursor animation using requestAnimationFrame
     function animateCursor() {
-        // Smooth interpolation for cursor position
-        cursorX += (mouseX - cursorX) * 0.1;
-        cursorY += (mouseY - cursorY) * 0.1;
+        // Smooth interpolation for cursor position (responsive but smooth)
+        cursorX += (mouseX - cursorX) * 0.15;
+        cursorY += (mouseY - cursorY) * 0.15;
 
-        cursor.style.left = `${cursorX}px`;
-        cursor.style.top = `${cursorY}px`;
+        cursor.style.left = `${cursorX - 10}px`;
+        cursor.style.top = `${cursorY - 10}px`;
 
         requestAnimationFrame(animateCursor);
     }
@@ -209,6 +209,15 @@ function initCustomCursor(): void {
         el.addEventListener('mouseleave', () => {
             cursor.style.transform = 'scale(1)';
         });
+    });
+
+    // Hide/show cursor when leaving/entering window
+    document.addEventListener('mouseleave', () => {
+        cursor.style.opacity = '0';
+    });
+
+    document.addEventListener('mouseenter', () => {
+        cursor.style.opacity = '1';
     });
 }
 
