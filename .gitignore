@@ -39,3 +39,5 @@ tmp/
 coverage/
 coverage.xml
 *.cache
+
+!dist/repos.js
