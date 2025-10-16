@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Full Stack Developer",
+    "subtitle": "Crafting innovative digital solutions with modern technologies",
+    "viewWork": "View My Work"
+  },
+  "about": {
+    "title": "About",
+    "intro": "Passionate Full Stack Developer with a strong foundation in modern web technologies. I specialize in building scalable, user-centric applications that solve real-world problems.",
+    "background": "With a bachelors in Industrial Engineering and specialized training from YouCode - UM6P, I bring a unique perspective combining technical expertise with problem-solving skills. I've successfully delivered 20+ projects ranging from console applications to full-stack web solutions.",
+    "passion": "My passion lies in creating elegant solutions with clean code, implementing best practices, and continuously learning new technologies to stay at the forefront of web development."
+  },
+  "skills": {
+    "title": "Skills",
+    "all": "All",
+    "frontend": "Front-end",
+    "backend": "Back-end",
+    "database": "Database",
+    "tools": "Tools"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Explore my GitHub repositories with live filtering by programming language",
+    "loading": "Loading repositories...",
+    "error": "Unable to load repositories. Please try again later.",
+    "viewRepo": "View Repository",
+    "stars": "stars",
+    "forks": "forks"
+  },
+  "contact": {
+    "title": "Get",
+    "description": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "follow": "Follow me",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Ibrahim Nidam. All rights reserved."
+  }
+}

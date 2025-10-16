@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Développeur Full Stack",
+    "subtitle": "Création de solutions numériques innovantes avec des technologies modernes",
+    "viewWork": "Voir Mon Travail"
+  },
+  "about": {
+    "title": "À propos",
+    "intro": "Développeur Full Stack passionné avec une solide base en technologies web modernes. Je me spécialise dans la création d'applications évolutives et centrées sur l'utilisateur qui résolvent des problèmes concrets.",
+    "background": "Avec une licence en Génie Industriel et une formation spécialisée de YouCode - UM6P, j'apporte une perspective unique combinant expertise technique et compétences en résolution de problèmes. J'ai livré avec succès plus de 20 projets allant des applications console aux solutions web full-stack.",
+    "passion": "Ma passion réside dans la création de solutions élégantes avec du code propre, la mise en œuvre des meilleures pratiques et l'apprentissage continu de nouvelles technologies pour rester à la pointe du développement web."
+  },
+  "skills": {
+    "title": "Compétences",
+    "all": "Tout",
+    "frontend": "Front-end",
+    "backend": "Back-end",
+    "database": "Base de données",
+    "tools": "Outils"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Explorez mes dépôts GitHub avec filtrage en direct par langage de programmation",
+    "loading": "Chargement des dépôts...",
+    "error": "Impossible de charger les dépôts. Veuillez réessayer plus tard.",
+    "viewRepo": "Voir le dépôt",
+    "stars": "étoiles",
+    "forks": "forks"
+  },
+  "contact": {
+    "title": "Me",
+    "description": "Je suis toujours ouvert à discuter de nouveaux projets, d'idées créatives ou d'opportunités de faire partie de vos visions.",
+    "email": "Email",
+    "phone": "Téléphone",
+    "location": "Localisation",
+    "follow": "Suivez-moi",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "subject": "Sujet",
+      "message": "Message",
+      "submit": "Envoyer le message"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Ibrahim Nidam. Tous droits réservés."
+  }
+}
