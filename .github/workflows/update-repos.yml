@@ -1,0 +1,36 @@
+name: Update GitHub Repos Data
+
+on:
+  schedule:
+    # Runs every Sunday at midnight UTC
+    - cron: '0 0 * * 0'
+  # Also allows manual trigger from GitHub Actions tab
+  workflow_dispatch:
+
+jobs:
+  update-repos:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Run repo update script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/generate-repos.js
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add src/data/repos.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update repos data" && git push)
