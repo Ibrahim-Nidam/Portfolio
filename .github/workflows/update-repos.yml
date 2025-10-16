@@ -2,8 +2,8 @@ name: Update GitHub Repos Data
 
 on:
   schedule:
-    # Runs every Sunday at midnight UTC
-    - cron: '0 0 * * 0'
+    # Runs every day at 12:00 AM UTC
+    - cron: '0 0 * * *'
   # Also allows manual trigger from GitHub Actions tab
   workflow_dispatch:
 
@@ -32,5 +32,5 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add src/data/repos.json
+          git add dist/repos.js
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update repos data" && git push)
