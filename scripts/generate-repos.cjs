@@ -1,18 +1,21 @@
 #!/usr/bin/env node
 /**
- * Script to generate repositories.json from GitHub API
+ * Script to generate repositories.js from GitHub API
  * Run by GitHub Actions automatically
  */
 
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const GITHUB_USERNAME = 'Ibrahim-Nidam';
 const GITHUB_API_URL = `https://api.github.com/users/${GITHUB_USERNAME}/repos`;
-const GITHUB_TOKEN = process.env.MY_TOKEN;
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN || process.env.MY_TOKEN;
 
 if (!GITHUB_TOKEN) {
-  console.error('❌ GITHUB_TOKEN environment variable is not set!');
+  console.error('❌ GITHUB_TOKEN or MY_TOKEN environment variable is not set!');
   process.exit(1);
 }
 
@@ -125,19 +128,17 @@ function transformRepositories(repos) {
   })).sort((a, b) => b.stargazers_count - a.stargazers_count);
 }
 
-async function generateRepositoriesJson() {
+async function generateRepositoriesJs() {
   try {
     const repos = await fetchAllRepositories();
     const enrichedRepos = await enrichRepositoriesWithLanguages(repos);
     const transformedRepos = transformRepositories(enrichedRepos);
 
-    // Ensure directory exists
     const outputDir = path.join(__dirname, '../dist');
     if (!fs.existsSync(outputDir)) {
       fs.mkdirSync(outputDir, { recursive: true });
     }
 
-    // Write as JavaScript module instead of JSON
     const jsContent = `export const repos = ${JSON.stringify(transformedRepos, null, 2)};`;
     const outputPath = path.join(outputDir, 'repos.js');
     fs.writeFileSync(outputPath, jsContent);
@@ -146,9 +147,9 @@ async function generateRepositoriesJson() {
     console.log(`📦 Total repositories: ${transformedRepos.length}`);
     console.log(`📅 Generated at: ${new Date().toISOString()}`);
   } catch (error) {
-    console.error('❌ Failed to generate repositories.json:', error);
+    console.error('❌ Failed to generate repositories.js:', error);
     process.exit(1);
   }
 }
 
-generateRepositoriesJson();
+generateRepositoriesJs();
