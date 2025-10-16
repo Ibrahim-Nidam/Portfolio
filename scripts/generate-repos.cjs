@@ -4,11 +4,9 @@
  * Run by GitHub Actions automatically
  */
 
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const fs = require('fs');
+const path = require('path');
+const { fileURLToPath } = require('url');
 
 const GITHUB_USERNAME = 'Ibrahim-Nidam';
 const GITHUB_API_URL = `https://api.github.com/users/${GITHUB_USERNAME}/repos`;
