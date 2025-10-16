@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibrahim Nidam - Full Stack Developer</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23ffffff'/%3E%3Ctext x='80' y='110' font-size='120' font-weight='bold' font-family='Saira Stencil One, cursive' fill='%23000000' text-anchor='middle' dominant-baseline='central' font-style='italic'%3EN%3C/text%3E%3Ccircle cx='155' cy='65' r='20' fill='%23eab308'/%3E%3C/svg%3E" />
+
+<!-- Fallback for older browsers -->
+<link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23ffffff'/%3E%3Ctext x='80' y='110' font-size='120' font-weight='bold' font-family='Saira Stencil One, cursive' fill='%23000000' text-anchor='middle' dominant-baseline='central' font-style='italic'%3EN%3C/text%3E%3Ccircle cx='155' cy='65' r='20' fill='%23eab308'/%3E%3C/svg%3E" />
+
+<!-- TAILWIND CDN - PLAY CDN (HAS YOUR GOLD COLORS!) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- YOUR CUSTOM COLORS -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fefce8', 100: '#fef9c3', 200: '#fef08a', 300: '#fde047',
+                            400: '#facc15', 500: '#eab308', 600: '#ca8a04', 700: '#a16207',
+                            800: '#854d0e', 900: '#713f12'
+                        }
+                    },
+                    fontFamily: {
+                        stencil: ['"Saira Stencil One"', 'cursive'],
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            },
+            darkMode: 'class'
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="gradient-bg dark:gradient-bg transition-colors duration-300">
+<!-- Custom Cursor -->
+<div class="cursor-glow bg-gold-400 hidden lg:block"></div>
+
+<!-- Particle Background -->
+<canvas id="particles-canvas"></canvas>
+
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur-md shadow-lg transition-all duration-300">
+    <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#hero" class="flex items-center space-x-2 group">
+                <span class="font-stencil italic text-2xl md:text-3xl text-black dark:text-white transition-colors">
+                    Nidam
+                </span>
+                <div class="w-3 h-3 rounded-full bg-gold-500 logo-dot"></div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="nav-link text-gray-700 dark:text-gray-300 hover:text-gold-500 dark:hover:text-gold-400 transition-colors" data-translate="nav.about">About</a>
+                <a href="#skills" class="nav-link text-gray-700 dark:text-gray-300 hover:text-gold-500 dark:hover:text-gold-400 transition-colors" data-translate="nav.skills">Skills</a>
+                <a href="#portfolio" class="nav-link text-gray-700 dark:text-gray-300 hover:text-gold-500 dark:hover:text-gold-400 transition-colors" data-translate="nav.portfolio">Portfolio</a>
+                <a href="#contact" class="nav-link text-gray-700 dark:text-gray-300 hover:text-gold-500 dark:hover:text-gold-400 transition-colors" data-translate="nav.contact">Contact</a>
+
+                <!-- Language Switcher -->
+                <button id="lang-toggle" class="px-3 py-1 rounded-full border-2 border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-white transition-all font-semibold">
+                    EN
+                </button>
+
+                <!-- Theme Switcher -->
+                <button id="theme-toggle" class="p-2 rounded-full bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-gray-200 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                    <svg class="w-6 h-6 text-gray-800 dark:text-gray-200 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg bg-gray-200 dark:bg-gray-800">
+                <svg class="w-6 h-6 text-gray-800 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+            <div class="flex flex-col space-y-4">
+                <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-gold-500 dark:hover:text-gold-400" data-translate="nav.about">About</a>
+                <a href="#skills" class="text-gray-700 dark:text-gray-300 hover:text-gold-500 dark:hover:text-gold-400" data-translate="nav.skills">Skills</a>
+                <a href="#portfolio" class="text-gray-700 dark:text-gray-300 hover:text-gold-500 dark:hover:text-gold-400" data-translate="nav.portfolio">Portfolio</a>
+                <a href="#contact" class="text-gray-700 dark:text-gray-300 hover:text-gold-500 dark:hover:text-gold-400" data-translate="nav.contact">Contact</a>
+                <div class="flex space-x-4">
+                    <button id="lang-toggle-mobile" class="px-3 py-1 rounded-full border-2 border-gold-500 text-gold-500">EN</button>
+                    <button id="theme-toggle-mobile" class="p-2 rounded-full bg-gray-200 dark:bg-gray-800">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-white dark:bg-transparent">
+    <!-- Animated Blob Background -->
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-gold-500/20 blob blur-3xl"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gold-600/20 blob blur-3xl" style="animation-delay: 2s;"></div>
+
+    <div class="container mx-auto px-6 relative z-10">
+        <div class="text-center">
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-black dark:text-white">
+                <span class="block mb-2 text-gold-500 glow-text font-stencil italic">Ibrahim Nidam</span>
+                <span class="rotating-role block text-3xl md:text-5xl lg:text-6xl text-black dark:text-white transition-all duration-500"></span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-12 text-gray-700 dark:text-gray-300 max-w-3xl mx-auto" data-translate="hero.subtitle">
+                Crafting innovative digital solutions with modern technologies
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <a href="#portfolio" class="group px-8 py-4 bg-gold-500 text-white rounded-full font-semibold hover:bg-gold-600 transition-all hover:scale-105 shadow-lg hover:shadow-2xl">
+                    <span data-translate="hero.viewWork">View My Work</span>
+                    <svg class="inline-block ml-2 w-5 h-5 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+                <div class="flex gap-4">
+                    <button id="download-cv-en" class="px-6 py-4 border-2 border-gold-500 text-gold-500 dark:text-gold-400 rounded-full font-semibold hover:bg-gold-500 hover:text-white transition-all">
+                        CV EN
+                    </button>
+                    <button id="download-cv-fr" class="px-6 py-4 border-2 border-gold-500 text-gold-500 dark:text-gold-400 rounded-full font-semibold hover:bg-gold-500 hover:text-white transition-all">
+                        CV FR
+                    </button>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="mt-16 animate-bounce">
+                <svg class="w-6 h-6 mx-auto text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-24 relative bg-black dark:bg-black">
+    <div class="container mx-auto px-6">
+        <div class="reveal max-w-5xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-black dark:text-white">
+                <span class="text-gold-500 font-stencil" data-translate="about.title">About</span> Me
+            </h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="relative float-animation">
+                    <div class="w-full aspect-square rounded-3xl bg-gradient-to-br from-gold-400 to-gold-600 p-1">
+                        <div class="relative w-full h-full rounded-3xl bg-white dark:bg-black flex items-center justify-center overflow-hidden">
+                            <!-- Image -->
+                            <img 
+                                id="profile-img" 
+                                src="./img/profile.jpg" 
+                                alt="Ibrahim Nidam" 
+                                class="absolute w-full h-full object-cover"
+                                onerror="this.style.display='none'; document.getElementById('profile-fallback').style.display='flex';"
+                                onload="document.getElementById('profile-fallback').style.display='none';"
+                            />
+                            <!-- Fallback N -->
+                            <div id="profile-fallback" class="absolute w-full h-full flex items-center justify-center text-9xl font-stencil italic text-gold-500">
+                                N
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6 text-gray-300">
+                    <p class="text-lg leading-relaxed" data-translate="about.intro">
+                        Passionate Full Stack Developer with a strong foundation in modern web technologies. I specialize in building scalable, user-centric applications that solve real-world problems.
+                    </p>
+                    <p class="text-lg leading-relaxed" data-translate="about.background">
+                        With a background in Industrial Engineering and specialized training from YouCode - UM6P, I bring a unique perspective combining technical expertise with problem-solving skills. I've successfully delivered 20+ projects ranging from console applications to full-stack web solutions.
+                    </p>
+                    <p class="text-lg leading-relaxed" data-translate="about.passion">
+                        My passion lies in creating elegant solutions with clean code, implementing best practices, and continuously learning new technologies to stay at the forefront of web development.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-gold-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
+                            </svg>
+                            <span class="font-semibold">YouCode - UM6P Graduate</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-gold-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                                <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path>
+                            </svg>
+                            <span class="font-semibold">20+ Projects Delivered</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-24 bg-gray-100 dark:bg-gray-900 relative">
+    <div class="container mx-auto px-6">
+        <div class="reveal">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-black dark:text-white">
+                <span class="text-gold-500 font-stencil" data-translate="skills.title">Skills</span> & Technologies
+            </h2>
+
+            <!-- Category Tabs -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="skill-tab active px-6 py-3 rounded-full font-semibold transition-all bg-gold-500 text-white" data-category="all" data-translate="skills.all">
+                    All
+                </button>
+                <button class="skill-tab px-6 py-3 rounded-full font-semibold transition-all bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gold-500 hover:text-white" data-category="frontend" data-translate="skills.frontend">
+                    Front-end
+                </button>
+                <button class="skill-tab px-6 py-3 rounded-full font-semibold transition-all bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gold-500 hover:text-white" data-category="backend" data-translate="skills.backend">
+                    Back-end
+                </button>
+                <button class="skill-tab px-6 py-3 rounded-full font-semibold transition-all bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gold-500 hover:text-white" data-category="database" data-translate="skills.database">
+                    Database
+                </button>
+                <button class="skill-tab px-6 py-3 rounded-full font-semibold transition-all bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gold-500 hover:text-white" data-category="tools" data-translate="skills.tools">
+                    Tools
+                </button>
+            </div>
+
+            <!-- Skills Grid -->
+            <div id="skills-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <!-- Skills will be dynamically loaded -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-24 relative">
+    <div class="container mx-auto px-6">
+        <div class="reveal">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-8 text-black dark:text-white">
+                <span class="text-gold-500 font-stencil" data-translate="portfolio.title">Portfolio</span>
+            </h2>
+            <p class="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto" data-translate="portfolio.subtitle">
+                Explore my GitHub repositories with live filtering by programming language
+            </p>
+
+            <!-- Language Filter -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button class="lang-filter active px-4 py-2 rounded-full text-sm font-semibold transition-all bg-gold-500 text-white" data-lang="all">
+                    All
+                </button>
+                <!-- Language filters will be dynamically added -->
+            </div>
+
+            <!-- Loading State -->
+            <div id="portfolio-loading" class="text-center py-12">
+                <div class="inline-block animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-gold-500"></div>
+                <p class="mt-4 text-gray-600 dark:text-gray-400" data-translate="portfolio.loading">Loading repositories...</p>
+            </div>
+
+            <!-- Projects Grid -->
+            <div id="portfolio-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 hidden">
+                <!-- Projects will be dynamically loaded from GitHub API -->
+            </div>
+
+            <!-- Error State -->
+            <div id="portfolio-error" class="hidden text-center py-12">
+                <svg class="w-16 h-16 mx-auto text-red-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <p class="text-gray-600 dark:text-gray-400" data-translate="portfolio.error">Unable to load repositories. Please try again later.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-24 bg-gray-100 dark:bg-gray-900 relative">
+    <div class="container mx-auto px-6">
+        <div class="reveal max-w-4xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-black dark:text-white">
+                <span class="text-gold-500 font-stencil" data-translate="contact.title">Get</span> In Touch
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <p class="text-lg text-gray-700 dark:text-gray-300" data-translate="contact.description">
+                        I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+                    </p>
+
+                    <div class="space-y-6">
+                        <!-- Email -->
+                        <a href="mailto:ibrahim.nidam22@gmail.com" class="flex items-center space-x-4 group hover:translate-x-2 transition-transform">
+                            <div class="w-12 h-12 rounded-full bg-gold-500/20 flex items-center justify-center group-hover:bg-gold-500 transition-colors">
+                                <svg class="w-6 h-6 text-gold-500 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 dark:text-gray-400" data-translate="contact.email">Email</p>
+                                <p class="text-lg font-semibold text-black dark:text-white">ibrahim.nidam22@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <!-- Phone -->
+                        <a href="tel:+212671866604" class="flex items-center space-x-4 group hover:translate-x-2 transition-transform">
+                            <div class="w-12 h-12 rounded-full bg-gold-500/20 flex items-center justify-center group-hover:bg-gold-500 transition-colors">
+                                <svg class="w-6 h-6 text-gold-500 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 dark:text-gray-400" data-translate="contact.phone">Phone</p>
+                                <p class="text-lg font-semibold text-black dark:text-white">+212 6 71 86 66 04</p>
+                            </div>
+                        </a>
+
+                        <!-- Location -->
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-full bg-gold-500/20 flex items-center justify-center">
+                                <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 dark:text-gray-400" data-translate="contact.location">Location</p>
+                                <p class="text-lg font-semibold text-black dark:text-white">Casablanca, Morocco</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="pt-8">
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4" data-translate="contact.follow">Follow me</p>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/Ibrahim-Nidam" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full bg-black dark:bg-white flex items-center justify-center hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6 text-white dark:text-black" fill="currentColor" viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            <a href="https://linkedin.com/in/ibrahim-nidam/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2" data-translate="contact.form.name">Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-gold-500 transition-all" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2" data-translate="contact.form.email">Email</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-gold-500 transition-all" placeholder="john@example.com">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2" data-translate="contact.form.subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required class="w-full px-4 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-gold-500 transition-all" placeholder="Project Inquiry">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2" data-translate="contact.form.message">Message</label>
+                            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-gold-500 transition-all resize-none" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 bg-gold-500 text-white rounded-lg font-semibold hover:bg-gold-600 transition-all hover:scale-105 shadow-lg hover:shadow-2xl">
+                            <span data-translate="contact.form.submit">Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-12 bg-black text-white">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                <span class="font-stencil italic text-2xl">Nidam</span>
+                <div class="w-2 h-2 rounded-full bg-gold-500 logo-dot"></div>
+            </div>
+            <p class="text-gray-400 text-center md:text-left" data-translate="footer.copyright">
+                © 2024 Ibrahim Nidam. All rights reserved.
+            </p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="https://github.com/Ibrahim-Nidam" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gold-500 transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/ibrahim-nidam/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gold-500 transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="./dist/main.js" type="module"></script>
+</body>
+</html>
