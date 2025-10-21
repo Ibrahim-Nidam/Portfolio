@@ -1,5 +1,19 @@
 export const repos = [
   {
+    "id": 1079875688,
+    "name": "Delivery_Optimizer",
+    "description": "Conception et implémentation d'une API REST Spring Boot de gestion optimisée de tournées de livraison permettant la planification intelligente des itinéraires selon les contraintes de capacité et de distance des véhicules",
+    "html_url": "https://github.com/Ibrahim-Nidam/Delivery_Optimizer",
+    "language": null,
+    "languages": [],
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2025-10-20T14:18:21Z",
+    "topics": [],
+    "fork": false,
+    "private": false
+  },
+  {
     "id": 1077591749,
     "name": "Portfolio",
     "description": "📱 Modern developer portfolio with automated GitHub repo syncing, multi-language filtering, dark mode, and zero backend. Built with TypeScript, Tailwind CSS, and GitHub Actions for daily auto-updates.",
@@ -13,7 +27,7 @@ export const repos = [
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2025-10-19T01:08:00Z",
+    "updated_at": "2025-10-20T01:05:49Z",
     "topics": [],
     "fork": false,
     "private": false
