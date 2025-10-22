@@ -4,11 +4,13 @@ export const repos = [
     "name": "Delivery_Optimizer",
     "description": "Conception et implémentation d'une API REST Spring Boot de gestion optimisée de tournées de livraison permettant la planification intelligente des itinéraires selon les contraintes de capacité et de distance des véhicules",
     "html_url": "https://github.com/Ibrahim-Nidam/Delivery_Optimizer",
-    "language": null,
-    "languages": [],
+    "language": "Java",
+    "languages": [
+      "Java"
+    ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2025-10-20T14:18:21Z",
+    "updated_at": "2025-10-21T16:02:46Z",
     "topics": [],
     "fork": false,
     "private": false
@@ -27,7 +29,7 @@ export const repos = [
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2025-10-20T01:05:49Z",
+    "updated_at": "2025-10-21T01:02:34Z",
     "topics": [],
     "fork": false,
     "private": false
