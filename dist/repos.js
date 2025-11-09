@@ -16,22 +16,6 @@ export const repos = [
     "private": false
   },
   {
-    "id": 1089379755,
-    "name": "Delivery_Optimizer_AI",
-    "description": "Gestion Tournées de Livraison en intégrant SpringAI",
-    "html_url": "https://github.com/Ibrahim-Nidam/Delivery_Optimizer_AI",
-    "language": "Java",
-    "languages": [
-      "Java"
-    ],
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "updated_at": "2025-11-07T16:11:25Z",
-    "topics": [],
-    "fork": false,
-    "private": false
-  },
-  {
     "id": 1077591749,
     "name": "Portfolio",
     "description": "📱 Modern developer portfolio with automated GitHub repo syncing, multi-language filtering, dark mode, and zero backend. Built with TypeScript, Tailwind CSS, and GitHub Actions for daily auto-updates.",
@@ -45,7 +29,23 @@ export const repos = [
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2025-11-07T01:03:47Z",
+    "updated_at": "2025-11-08T01:00:35Z",
+    "topics": [],
+    "fork": false,
+    "private": false
+  },
+  {
+    "id": 1089379755,
+    "name": "Delivery_Optimizer_AI",
+    "description": "Gestion Tournées de Livraison en intégrant SpringAI",
+    "html_url": "https://github.com/Ibrahim-Nidam/Delivery_Optimizer_AI",
+    "language": "Java",
+    "languages": [
+      "Java"
+    ],
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2025-11-07T16:11:25Z",
     "topics": [],
     "fork": false,
     "private": false
