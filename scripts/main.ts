@@ -228,19 +228,30 @@ function initCustomCursor(): void {
 function initScrollAnimations(): void {
     const reveals = document.querySelectorAll('.reveal');
 
+    // More mobile-friendly settings
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
+                // Optional: stop observing after reveal (performance boost)
+                revealObserver.unobserve(entry.target);
             }
         });
     }, {
-        threshold: 0.1,
-        rootMargin: '0px 0px -100px 0px'
+        threshold: 0.05, // Lower threshold for mobile (was 0.1)
+        rootMargin: '0px 0px -50px 0px' // Less aggressive margin for mobile
     });
 
     reveals.forEach(reveal => {
-        revealObserver.observe(reveal);
+        // Immediately show if already in viewport (fixes initial load on mobile)
+        const rect = reveal.getBoundingClientRect();
+        const isInViewport = rect.top < window.innerHeight && rect.bottom > 0;
+
+        if (isInViewport) {
+            reveal.classList.add('active');
+        } else {
+            revealObserver.observe(reveal);
+        }
     });
 }
 
