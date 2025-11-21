@@ -395,6 +395,13 @@ function initSmoothScrolling() {
                         top: offsetTop,
                         behavior: 'smooth'
                     });
+                    // Force activate reveal after smooth scroll completes
+                    setTimeout(() => {
+                        const revealElement = target.querySelector('.reveal');
+                        if (revealElement && !revealElement.classList.contains('active')) {
+                            revealElement.classList.add('active');
+                        }
+                    }, 600);
                 }
             }
         });
