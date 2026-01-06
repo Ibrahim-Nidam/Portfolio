@@ -16,6 +16,25 @@ export const repos = [
     "private": false
   },
   {
+    "id": 1128385506,
+    "name": "Angular_MusicStream",
+    "description": null,
+    "html_url": "https://github.com/Ibrahim-Nidam/Angular_MusicStream",
+    "language": "CSS",
+    "languages": [
+      "CSS",
+      "HTML",
+      "TypeScript",
+      "JavaScript"
+    ],
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-01-05T16:29:33Z",
+    "topics": [],
+    "fork": false,
+    "private": false
+  },
+  {
     "id": 1077591749,
     "name": "Portfolio",
     "description": "📱 Modern developer portfolio with automated GitHub repo syncing, multi-language filtering, dark mode, and zero backend. Built with TypeScript, Tailwind CSS, and GitHub Actions for daily auto-updates.",
@@ -29,7 +48,7 @@ export const repos = [
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-01-04T01:17:14Z",
+    "updated_at": "2026-01-05T01:15:59Z",
     "topics": [],
     "fork": false,
     "private": false
