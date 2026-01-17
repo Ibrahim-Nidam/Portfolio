@@ -16,20 +16,50 @@ export const repos = [
     "private": false
   },
   {
-    "id": 1128385506,
-    "name": "Angular_MusicStream",
-    "description": null,
-    "html_url": "https://github.com/Ibrahim-Nidam/Angular_MusicStream",
-    "language": "HTML",
+    "id": 1135767004,
+    "name": "mcino-Introduction-to-Git-and-GitHub",
+    "description": "Introduction-to-Git-and-GitHub",
+    "html_url": "https://github.com/Ibrahim-Nidam/mcino-Introduction-to-Git-and-GitHub",
+    "language": "Python",
     "languages": [
-      "HTML",
-      "TypeScript",
-      "CSS",
-      "JavaScript"
+      "Python",
+      "Shell"
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-01-15T11:28:33Z",
+    "updated_at": "2026-01-16T15:13:48Z",
+    "topics": [],
+    "fork": true,
+    "private": false
+  },
+  {
+    "id": 1135756702,
+    "name": "Centralized-repository-shipping_calculations",
+    "description": "Centralized-repository-shipping_calculations",
+    "html_url": "https://github.com/Ibrahim-Nidam/Centralized-repository-shipping_calculations",
+    "language": null,
+    "languages": [
+      "Python"
+    ],
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-01-16T14:49:52Z",
+    "topics": [],
+    "fork": true,
+    "private": false
+  },
+  {
+    "id": 1135740411,
+    "name": "github-final-project",
+    "description": null,
+    "html_url": "https://github.com/Ibrahim-Nidam/github-final-project",
+    "language": "Shell",
+    "languages": [
+      "Shell"
+    ],
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-01-16T14:46:11Z",
     "topics": [],
     "fork": false,
     "private": false
@@ -48,7 +78,26 @@ export const repos = [
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-01-15T01:08:58Z",
+    "updated_at": "2026-01-16T01:10:43Z",
+    "topics": [],
+    "fork": false,
+    "private": false
+  },
+  {
+    "id": 1128385506,
+    "name": "Angular_MusicStream",
+    "description": null,
+    "html_url": "https://github.com/Ibrahim-Nidam/Angular_MusicStream",
+    "language": "HTML",
+    "languages": [
+      "HTML",
+      "TypeScript",
+      "CSS",
+      "JavaScript"
+    ],
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-01-15T11:28:33Z",
     "topics": [],
     "fork": false,
     "private": false
