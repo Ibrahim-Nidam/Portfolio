@@ -16,6 +16,29 @@ export const repos = [
     "private": false
   },
   {
+    "id": 1144117719,
+    "name": "tdd-bdd-final-project",
+    "description": "Final project for TDD/BDD course",
+    "html_url": "https://github.com/Ibrahim-Nidam/tdd-bdd-final-project",
+    "language": "Python",
+    "languages": [
+      "Python",
+      "JavaScript",
+      "HTML",
+      "Gherkin",
+      "Dockerfile",
+      "Shell",
+      "Makefile",
+      "Procfile"
+    ],
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-01-28T15:04:03Z",
+    "topics": [],
+    "fork": false,
+    "private": false
+  },
+  {
     "id": 1077591749,
     "name": "Portfolio",
     "description": "📱 Modern developer portfolio with automated GitHub repo syncing, multi-language filtering, dark mode, and zero backend. Built with TypeScript, Tailwind CSS, and GitHub Actions for daily auto-updates.",
@@ -29,7 +52,7 @@ export const repos = [
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-01-27T01:15:58Z",
+    "updated_at": "2026-01-28T01:11:35Z",
     "topics": [],
     "fork": false,
     "private": false
