@@ -16,24 +16,6 @@ export const repos = [
     "private": false
   },
   {
-    "id": 1153377798,
-    "name": "JobFinder_Angular",
-    "description": "JobFinder est une application de recherche d'emplois qui permet aux chercheurs d'emploi de consulter des offres d'emploi provenant de plusieurs sources internationales via une ou plusieurs APIs publiques. ",
-    "html_url": "https://github.com/Ibrahim-Nidam/JobFinder_Angular",
-    "language": "TypeScript",
-    "languages": [
-      "TypeScript",
-      "HTML",
-      "CSS"
-    ],
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "updated_at": "2026-02-13T13:52:14Z",
-    "topics": [],
-    "fork": false,
-    "private": false
-  },
-  {
     "id": 1077591749,
     "name": "Portfolio",
     "description": "📱 Modern developer portfolio with automated GitHub repo syncing, multi-language filtering, dark mode, and zero backend. Built with TypeScript, Tailwind CSS, and GitHub Actions for daily auto-updates.",
@@ -47,7 +29,25 @@ export const repos = [
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-02-13T01:29:51Z",
+    "updated_at": "2026-02-14T01:22:04Z",
+    "topics": [],
+    "fork": false,
+    "private": false
+  },
+  {
+    "id": 1153377798,
+    "name": "JobFinder_Angular",
+    "description": "JobFinder est une application de recherche d'emplois qui permet aux chercheurs d'emploi de consulter des offres d'emploi provenant de plusieurs sources internationales via une ou plusieurs APIs publiques. ",
+    "html_url": "https://github.com/Ibrahim-Nidam/JobFinder_Angular",
+    "language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "HTML",
+      "CSS"
+    ],
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-02-13T13:52:14Z",
     "topics": [],
     "fork": false,
     "private": false
