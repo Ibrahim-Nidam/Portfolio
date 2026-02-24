@@ -16,6 +16,20 @@ export const repos = [
     "private": false
   },
   {
+    "id": 1164864661,
+    "name": "Modoria_Fil_Rouge.",
+    "description": null,
+    "html_url": "https://github.com/Ibrahim-Nidam/Modoria_Fil_Rouge.",
+    "language": null,
+    "languages": [],
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-02-23T15:12:54Z",
+    "topics": [],
+    "fork": false,
+    "private": false
+  },
+  {
     "id": 1077591749,
     "name": "Portfolio",
     "description": "📱 Modern developer portfolio with automated GitHub repo syncing, multi-language filtering, dark mode, and zero backend. Built with TypeScript, Tailwind CSS, and GitHub Actions for daily auto-updates.",
@@ -29,7 +43,7 @@ export const repos = [
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-02-22T01:26:18Z",
+    "updated_at": "2026-02-23T01:25:37Z",
     "topics": [],
     "fork": false,
     "private": false
