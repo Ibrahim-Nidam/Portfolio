@@ -18,13 +18,16 @@ export const repos = [
   {
     "id": 1164864661,
     "name": "Modoria_Fil_Rouge.",
-    "description": null,
+    "description": "Modoria aims to revolutionize this experience through an intelligent e-commerce website that dynamically changes its design, atmosphere, and clothing collections according to the seasons (Spring, Summer, Autumn, Winter). ",
     "html_url": "https://github.com/Ibrahim-Nidam/Modoria_Fil_Rouge.",
-    "language": null,
-    "languages": [],
+    "language": "Java",
+    "languages": [
+      "Java",
+      "Dockerfile"
+    ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-02-23T15:12:54Z",
+    "updated_at": "2026-02-24T13:54:57Z",
     "topics": [],
     "fork": false,
     "private": false
@@ -43,7 +46,7 @@ export const repos = [
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-02-23T01:25:37Z",
+    "updated_at": "2026-02-24T01:24:32Z",
     "topics": [],
     "fork": false,
     "private": false
@@ -204,23 +207,6 @@ export const repos = [
     "stargazers_count": 0,
     "forks_count": 0,
     "updated_at": "2026-01-15T11:28:33Z",
-    "topics": [],
-    "fork": false,
-    "private": false
-  },
-  {
-    "id": 1086373801,
-    "name": "Modoria_Fil_Rouge",
-    "description": "Modoria aims to revolutionize this experience through an intelligent e-commerce website that dynamically changes its design, atmosphere, and clothing collections according to the seasons (Spring, Summer, Autumn, Winter).",
-    "html_url": "https://github.com/Ibrahim-Nidam/Modoria_Fil_Rouge",
-    "language": "Java",
-    "languages": [
-      "Java",
-      "Dockerfile"
-    ],
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "updated_at": "2025-12-22T11:15:32Z",
     "topics": [],
     "fork": false,
     "private": false
