@@ -16,6 +16,25 @@ export const repos = [
     "private": false
   },
   {
+    "id": 1077591749,
+    "name": "Portfolio",
+    "description": "📱 Modern developer portfolio with automated GitHub repo syncing, multi-language filtering, dark mode, and zero backend. Built with TypeScript, Tailwind CSS, and GitHub Actions for daily auto-updates.",
+    "html_url": "https://github.com/Ibrahim-Nidam/Portfolio",
+    "language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "HTML",
+      "JavaScript",
+      "CSS"
+    ],
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-02-28T01:16:02Z",
+    "topics": [],
+    "fork": false,
+    "private": false
+  },
+  {
     "id": 1164864661,
     "name": "Modoria_Fil_Rouge.",
     "description": "Modoria aims to revolutionize this experience through an intelligent e-commerce website that dynamically changes its design, atmosphere, and clothing collections according to the seasons (Spring, Summer, Autumn, Winter). ",
@@ -31,25 +50,6 @@ export const repos = [
     "stargazers_count": 0,
     "forks_count": 0,
     "updated_at": "2026-02-27T11:25:27Z",
-    "topics": [],
-    "fork": false,
-    "private": false
-  },
-  {
-    "id": 1077591749,
-    "name": "Portfolio",
-    "description": "📱 Modern developer portfolio with automated GitHub repo syncing, multi-language filtering, dark mode, and zero backend. Built with TypeScript, Tailwind CSS, and GitHub Actions for daily auto-updates.",
-    "html_url": "https://github.com/Ibrahim-Nidam/Portfolio",
-    "language": "TypeScript",
-    "languages": [
-      "TypeScript",
-      "HTML",
-      "JavaScript",
-      "CSS"
-    ],
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "updated_at": "2026-02-27T01:21:39Z",
     "topics": [],
     "fork": false,
     "private": false
