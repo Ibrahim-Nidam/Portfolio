@@ -16,6 +16,23 @@ export const repos = [
     "private": false
   },
   {
+    "id": 1205898729,
+    "name": "asgard-spring",
+    "description": null,
+    "html_url": "https://github.com/Ibrahim-Nidam/asgard-spring",
+    "language": null,
+    "languages": [
+      "Java",
+      "Dockerfile"
+    ],
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-04-09T11:43:35Z",
+    "topics": [],
+    "fork": true,
+    "private": false
+  },
+  {
     "id": 1077591749,
     "name": "Portfolio",
     "description": "📱 Modern developer portfolio with automated GitHub repo syncing, multi-language filtering, dark mode, and zero backend. Built with TypeScript, Tailwind CSS, and GitHub Actions for daily auto-updates.",
@@ -29,7 +46,7 @@ export const repos = [
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-04-08T01:49:08Z",
+    "updated_at": "2026-04-09T01:28:18Z",
     "topics": [],
     "fork": false,
     "private": false
