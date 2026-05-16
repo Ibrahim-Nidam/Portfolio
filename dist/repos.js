@@ -16,22 +16,6 @@ export const repos = [
     "private": false
   },
   {
-    "id": 1236703368,
-    "name": "neetcode-submissions",
-    "description": "My NeetCode.io problem submissions",
-    "html_url": "https://github.com/Ibrahim-Nidam/neetcode-submissions",
-    "language": "Java",
-    "languages": [
-      "Java"
-    ],
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "updated_at": "2026-05-14T15:24:43Z",
-    "topics": [],
-    "fork": false,
-    "private": false
-  },
-  {
     "id": 1077591749,
     "name": "Portfolio",
     "description": "📱 Modern developer portfolio with automated GitHub repo syncing, multi-language filtering, dark mode, and zero backend. Built with TypeScript, Tailwind CSS, and GitHub Actions for daily auto-updates.",
@@ -45,7 +29,23 @@ export const repos = [
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-05-14T02:32:08Z",
+    "updated_at": "2026-05-15T02:31:27Z",
+    "topics": [],
+    "fork": false,
+    "private": false
+  },
+  {
+    "id": 1236703368,
+    "name": "neetcode-submissions",
+    "description": "My NeetCode.io problem submissions",
+    "html_url": "https://github.com/Ibrahim-Nidam/neetcode-submissions",
+    "language": "Java",
+    "languages": [
+      "Java"
+    ],
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-05-14T15:24:43Z",
     "topics": [],
     "fork": false,
     "private": false
