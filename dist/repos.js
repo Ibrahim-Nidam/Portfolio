@@ -32,6 +32,22 @@ export const repos = [
     "private": false
   },
   {
+    "id": 1309181237,
+    "name": "project-based-learning",
+    "description": "Curated list of project-based tutorials",
+    "html_url": "https://github.com/Ibrahim-Nidam/project-based-learning",
+    "language": null,
+    "languages": [
+      "Python"
+    ],
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-07-22T19:26:33Z",
+    "topics": [],
+    "fork": true,
+    "private": false
+  },
+  {
     "id": 1077591749,
     "name": "Portfolio",
     "description": "📱 Modern developer portfolio with automated GitHub repo syncing, multi-language filtering, dark mode, and zero backend. Built with TypeScript, Tailwind CSS, and GitHub Actions for daily auto-updates.",
@@ -45,7 +61,7 @@ export const repos = [
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-07-21T01:57:46Z",
+    "updated_at": "2026-07-22T01:56:39Z",
     "topics": [],
     "fork": false,
     "private": false
