@@ -32,6 +32,20 @@ export const repos = [
     "private": false
   },
   {
+    "id": 1314022826,
+    "name": "EdTech",
+    "description": "Ce projet vise la montée en compétence des apprenants dans le domaine de l'intelligence artificielle, en réponse à la demande croissante du marché du travail. Il permet d'acquérir des compétences directement valorisables en entreprise.",
+    "html_url": "https://github.com/Ibrahim-Nidam/EdTech",
+    "language": null,
+    "languages": [],
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-07-27T15:54:03Z",
+    "topics": [],
+    "fork": false,
+    "private": false
+  },
+  {
     "id": 1077591749,
     "name": "Portfolio",
     "description": "📱 Modern developer portfolio with automated GitHub repo syncing, multi-language filtering, dark mode, and zero backend. Built with TypeScript, Tailwind CSS, and GitHub Actions for daily auto-updates.",
@@ -45,7 +59,7 @@ export const repos = [
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-07-26T02:03:16Z",
+    "updated_at": "2026-07-27T02:10:50Z",
     "topics": [],
     "fork": false,
     "private": false
