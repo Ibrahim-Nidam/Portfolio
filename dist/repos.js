@@ -32,40 +32,20 @@ export const repos = [
     "private": false
   },
   {
-    "id": 1315295819,
-    "name": "PricePilot",
-    "description": "PricePilot is a local-first Flutter application for capturing products, stores, and purchases offline.",
-    "html_url": "https://github.com/Ibrahim-Nidam/PricePilot",
-    "language": "Dart",
-    "languages": [
-      "Dart",
-      "HTML",
-      "C++",
-      "CMake",
-      "Swift",
-      "C",
-      "Kotlin",
-      "Objective-C"
-    ],
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "updated_at": "2026-07-28T18:20:41Z",
-    "topics": [],
-    "fork": false,
-    "private": false
-  },
-  {
     "id": 1314022826,
     "name": "EdTech",
     "description": "Ce projet vise la montée en compétence des apprenants dans le domaine de l'intelligence artificielle, en réponse à la demande croissante du marché du travail. Il permet d'acquérir des compétences directement valorisables en entreprise.",
     "html_url": "https://github.com/Ibrahim-Nidam/EdTech",
     "language": "Python",
     "languages": [
-      "Python"
+      "Python",
+      "JavaScript",
+      "CSS",
+      "HTML"
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-07-28T14:48:58Z",
+    "updated_at": "2026-07-29T13:59:13Z",
     "topics": [],
     "fork": false,
     "private": false
@@ -84,7 +64,30 @@ export const repos = [
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-07-28T01:51:17Z",
+    "updated_at": "2026-07-29T01:54:26Z",
+    "topics": [],
+    "fork": false,
+    "private": false
+  },
+  {
+    "id": 1315295819,
+    "name": "PricePilot",
+    "description": "PricePilot is a local-first Flutter application for capturing products, stores, and purchases offline.",
+    "html_url": "https://github.com/Ibrahim-Nidam/PricePilot",
+    "language": "Dart",
+    "languages": [
+      "Dart",
+      "HTML",
+      "C++",
+      "CMake",
+      "Swift",
+      "C",
+      "Kotlin",
+      "Objective-C"
+    ],
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-07-28T18:20:41Z",
     "topics": [],
     "fork": false,
     "private": false
