@@ -32,22 +32,6 @@ export const repos = [
     "private": false
   },
   {
-    "id": 1322924429,
-    "name": "privacy",
-    "description": null,
-    "html_url": "https://github.com/Ibrahim-Nidam/privacy",
-    "language": "HTML",
-    "languages": [
-      "HTML"
-    ],
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "updated_at": "2026-08-04T13:41:51Z",
-    "topics": [],
-    "fork": false,
-    "private": false
-  },
-  {
     "id": 1314022826,
     "name": "EdTech",
     "description": "Ce projet vise la montée en compétence des apprenants dans le domaine de l'intelligence artificielle, en réponse à la demande croissante du marché du travail. Il permet d'acquérir des compétences directement valorisables en entreprise.",
@@ -61,7 +45,7 @@ export const repos = [
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-08-04T06:32:49Z",
+    "updated_at": "2026-08-05T05:06:36Z",
     "topics": [],
     "fork": false,
     "private": false
@@ -80,7 +64,23 @@ export const repos = [
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-08-04T01:50:15Z",
+    "updated_at": "2026-08-05T01:50:52Z",
+    "topics": [],
+    "fork": false,
+    "private": false
+  },
+  {
+    "id": 1322924429,
+    "name": "privacy",
+    "description": null,
+    "html_url": "https://github.com/Ibrahim-Nidam/privacy",
+    "language": "HTML",
+    "languages": [
+      "HTML"
+    ],
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-08-04T13:41:51Z",
     "topics": [],
     "fork": false,
     "private": false
