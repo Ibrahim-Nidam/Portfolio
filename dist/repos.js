@@ -32,6 +32,25 @@ export const repos = [
     "private": false
   },
   {
+    "id": 1077591749,
+    "name": "Portfolio",
+    "description": "📱 Modern developer portfolio with automated GitHub repo syncing, multi-language filtering, dark mode, and zero backend. Built with TypeScript, Tailwind CSS, and GitHub Actions for daily auto-updates.",
+    "html_url": "https://github.com/Ibrahim-Nidam/Portfolio",
+    "language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "HTML",
+      "JavaScript",
+      "CSS"
+    ],
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-08-08T01:02:40Z",
+    "topics": [],
+    "fork": false,
+    "private": false
+  },
+  {
     "id": 1314022826,
     "name": "EdTech",
     "description": "Ce projet vise la montée en compétence des apprenants dans le domaine de l'intelligence artificielle, en réponse à la demande croissante du marché du travail. Il permet d'acquérir des compétences directement valorisables en entreprise.",
@@ -46,25 +65,6 @@ export const repos = [
     "stargazers_count": 0,
     "forks_count": 0,
     "updated_at": "2026-08-07T22:59:00Z",
-    "topics": [],
-    "fork": false,
-    "private": false
-  },
-  {
-    "id": 1077591749,
-    "name": "Portfolio",
-    "description": "📱 Modern developer portfolio with automated GitHub repo syncing, multi-language filtering, dark mode, and zero backend. Built with TypeScript, Tailwind CSS, and GitHub Actions for daily auto-updates.",
-    "html_url": "https://github.com/Ibrahim-Nidam/Portfolio",
-    "language": "TypeScript",
-    "languages": [
-      "TypeScript",
-      "HTML",
-      "JavaScript",
-      "CSS"
-    ],
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "updated_at": "2026-08-07T02:14:40Z",
     "topics": [],
     "fork": false,
     "private": false
