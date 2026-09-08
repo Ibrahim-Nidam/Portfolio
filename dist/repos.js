@@ -32,21 +32,17 @@ export const repos = [
     "private": false
   },
   {
-    "id": 1315285356,
-    "name": "Ahl_AL-jannah",
-    "description": "Ahl Jannah is a comprehensive offline Islamic companion app built with Flutter.",
-    "html_url": "https://github.com/Ibrahim-Nidam/Ahl_AL-jannah",
-    "language": "Dart",
+    "id": 1359979023,
+    "name": "CTX_9800_DSI",
+    "description": null,
+    "html_url": "https://github.com/Ibrahim-Nidam/CTX_9800_DSI",
+    "language": "HTML",
     "languages": [
-      "Dart",
-      "Python",
-      "Swift",
-      "Kotlin",
-      "Objective-C"
+      "HTML"
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-09-06T09:56:40Z",
+    "updated_at": "2026-09-07T19:33:46Z",
     "topics": [],
     "fork": false,
     "private": false
@@ -65,7 +61,27 @@ export const repos = [
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-09-06T02:14:27Z",
+    "updated_at": "2026-09-07T02:11:43Z",
+    "topics": [],
+    "fork": false,
+    "private": false
+  },
+  {
+    "id": 1315285356,
+    "name": "Ahl_AL-jannah",
+    "description": "Ahl Jannah is a comprehensive offline Islamic companion app built with Flutter.",
+    "html_url": "https://github.com/Ibrahim-Nidam/Ahl_AL-jannah",
+    "language": "Dart",
+    "languages": [
+      "Dart",
+      "Python",
+      "Swift",
+      "Kotlin",
+      "Objective-C"
+    ],
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-09-06T09:56:40Z",
     "topics": [],
     "fork": false,
     "private": false
