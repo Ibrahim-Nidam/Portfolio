@@ -32,6 +32,22 @@ export const repos = [
     "private": false
   },
   {
+    "id": 1359979023,
+    "name": "CTX_9800_DSI",
+    "description": null,
+    "html_url": "https://github.com/Ibrahim-Nidam/CTX_9800_DSI",
+    "language": "HTML",
+    "languages": [
+      "HTML"
+    ],
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-09-09T19:30:32Z",
+    "topics": [],
+    "fork": false,
+    "private": false
+  },
+  {
     "id": 1077591749,
     "name": "Portfolio",
     "description": "📱 Modern developer portfolio with automated GitHub repo syncing, multi-language filtering, dark mode, and zero backend. Built with TypeScript, Tailwind CSS, and GitHub Actions for daily auto-updates.",
@@ -45,23 +61,7 @@ export const repos = [
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-09-08T02:23:56Z",
-    "topics": [],
-    "fork": false,
-    "private": false
-  },
-  {
-    "id": 1359979023,
-    "name": "CTX_9800_DSI",
-    "description": null,
-    "html_url": "https://github.com/Ibrahim-Nidam/CTX_9800_DSI",
-    "language": "HTML",
-    "languages": [
-      "HTML"
-    ],
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "updated_at": "2026-09-07T19:33:46Z",
+    "updated_at": "2026-09-09T02:27:39Z",
     "topics": [],
     "fork": false,
     "private": false
