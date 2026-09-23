@@ -32,6 +32,25 @@ export const repos = [
     "private": false
   },
   {
+    "id": 1077591749,
+    "name": "Portfolio",
+    "description": "📱 Modern developer portfolio with automated GitHub repo syncing, multi-language filtering, dark mode, and zero backend. Built with TypeScript, Tailwind CSS, and GitHub Actions for daily auto-updates.",
+    "html_url": "https://github.com/Ibrahim-Nidam/Portfolio",
+    "language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "HTML",
+      "JavaScript",
+      "CSS"
+    ],
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-09-22T02:42:04Z",
+    "topics": [],
+    "fork": false,
+    "private": false
+  },
+  {
     "id": 1315285356,
     "name": "Ahl_AL-jannah",
     "description": "Ahl Jannah is a comprehensive offline Islamic companion app built with Flutter.",
@@ -48,25 +67,6 @@ export const repos = [
     "stargazers_count": 0,
     "forks_count": 0,
     "updated_at": "2026-09-21T22:37:28Z",
-    "topics": [],
-    "fork": false,
-    "private": false
-  },
-  {
-    "id": 1077591749,
-    "name": "Portfolio",
-    "description": "📱 Modern developer portfolio with automated GitHub repo syncing, multi-language filtering, dark mode, and zero backend. Built with TypeScript, Tailwind CSS, and GitHub Actions for daily auto-updates.",
-    "html_url": "https://github.com/Ibrahim-Nidam/Portfolio",
-    "language": "TypeScript",
-    "languages": [
-      "TypeScript",
-      "HTML",
-      "JavaScript",
-      "CSS"
-    ],
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "updated_at": "2026-09-21T02:40:33Z",
     "topics": [],
     "fork": false,
     "private": false
