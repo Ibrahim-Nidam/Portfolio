@@ -32,6 +32,22 @@ export const repos = [
     "private": false
   },
   {
+    "id": 1391434825,
+    "name": "stock_tracker",
+    "description": null,
+    "html_url": "https://github.com/Ibrahim-Nidam/stock_tracker",
+    "language": "HTML",
+    "languages": [
+      "HTML"
+    ],
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-09-27T21:49:24Z",
+    "topics": [],
+    "fork": false,
+    "private": false
+  },
+  {
     "id": 1077591749,
     "name": "Portfolio",
     "description": "📱 Modern developer portfolio with automated GitHub repo syncing, multi-language filtering, dark mode, and zero backend. Built with TypeScript, Tailwind CSS, and GitHub Actions for daily auto-updates.",
@@ -45,7 +61,7 @@ export const repos = [
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-09-26T02:52:02Z",
+    "updated_at": "2026-09-27T02:54:12Z",
     "topics": [],
     "fork": false,
     "private": false
