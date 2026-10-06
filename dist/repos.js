@@ -32,20 +32,21 @@ export const repos = [
     "private": false
   },
   {
-    "id": 1404489321,
-    "name": "Smiths_maintenance",
+    "id": 1406325790,
+    "name": "Pm_planner",
     "description": null,
-    "html_url": "https://github.com/Ibrahim-Nidam/Smiths_maintenance",
+    "html_url": "https://github.com/Ibrahim-Nidam/Pm_planner",
     "language": "JavaScript",
     "languages": [
       "JavaScript",
       "PLpgSQL",
-      "CSS",
-      "HTML"
+      "TypeScript",
+      "HTML",
+      "CSS"
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-10-04T21:12:32Z",
+    "updated_at": "2026-10-05T22:57:32Z",
     "topics": [],
     "fork": false,
     "private": false
@@ -64,7 +65,26 @@ export const repos = [
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-10-04T03:39:20Z",
+    "updated_at": "2026-10-05T03:22:36Z",
+    "topics": [],
+    "fork": false,
+    "private": false
+  },
+  {
+    "id": 1404489321,
+    "name": "Smiths_maintenance",
+    "description": null,
+    "html_url": "https://github.com/Ibrahim-Nidam/Smiths_maintenance",
+    "language": "JavaScript",
+    "languages": [
+      "JavaScript",
+      "PLpgSQL",
+      "CSS",
+      "HTML"
+    ],
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-10-04T21:12:32Z",
     "topics": [],
     "fork": false,
     "private": false
