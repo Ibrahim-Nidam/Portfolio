@@ -41,12 +41,12 @@ export const repos = [
       "JavaScript",
       "PLpgSQL",
       "TypeScript",
-      "HTML",
-      "CSS"
+      "CSS",
+      "HTML"
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-10-05T22:57:32Z",
+    "updated_at": "2026-10-06T20:59:49Z",
     "topics": [],
     "fork": false,
     "private": false
@@ -65,7 +65,7 @@ export const repos = [
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-10-05T03:22:36Z",
+    "updated_at": "2026-10-06T04:09:53Z",
     "topics": [],
     "fork": false,
     "private": false
