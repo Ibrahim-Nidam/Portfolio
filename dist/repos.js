@@ -32,20 +32,20 @@ export const repos = [
     "private": false
   },
   {
-    "id": 1077591749,
-    "name": "Portfolio",
-    "description": "📱 Modern developer portfolio with automated GitHub repo syncing, multi-language filtering, dark mode, and zero backend. Built with TypeScript, Tailwind CSS, and GitHub Actions for daily auto-updates.",
-    "html_url": "https://github.com/Ibrahim-Nidam/Portfolio",
-    "language": "TypeScript",
+    "id": 1404489321,
+    "name": "Smiths_maintenance",
+    "description": null,
+    "html_url": "https://github.com/Ibrahim-Nidam/Smiths_maintenance",
+    "language": "JavaScript",
     "languages": [
-      "TypeScript",
-      "HTML",
       "JavaScript",
-      "CSS"
+      "PLpgSQL",
+      "CSS",
+      "HTML"
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-10-10T03:41:22Z",
+    "updated_at": "2026-10-11T21:26:14Z",
     "topics": [],
     "fork": false,
     "private": false
@@ -65,26 +65,7 @@ export const repos = [
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-10-09T21:19:35Z",
-    "topics": [],
-    "fork": false,
-    "private": false
-  },
-  {
-    "id": 1404489321,
-    "name": "Smiths_maintenance",
-    "description": null,
-    "html_url": "https://github.com/Ibrahim-Nidam/Smiths_maintenance",
-    "language": "JavaScript",
-    "languages": [
-      "JavaScript",
-      "PLpgSQL",
-      "CSS",
-      "HTML"
-    ],
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "updated_at": "2026-10-04T21:12:32Z",
+    "updated_at": "2026-10-11T17:16:53Z",
     "topics": [],
     "fork": false,
     "private": false
@@ -96,11 +77,31 @@ export const repos = [
     "html_url": "https://github.com/Ibrahim-Nidam/stock_tracker",
     "language": "HTML",
     "languages": [
-      "HTML"
+      "HTML",
+      "PLpgSQL"
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-09-30T19:17:03Z",
+    "updated_at": "2026-10-11T14:47:45Z",
+    "topics": [],
+    "fork": false,
+    "private": false
+  },
+  {
+    "id": 1077591749,
+    "name": "Portfolio",
+    "description": "📱 Modern developer portfolio with automated GitHub repo syncing, multi-language filtering, dark mode, and zero backend. Built with TypeScript, Tailwind CSS, and GitHub Actions for daily auto-updates.",
+    "html_url": "https://github.com/Ibrahim-Nidam/Portfolio",
+    "language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "HTML",
+      "JavaScript",
+      "CSS"
+    ],
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-10-11T03:14:22Z",
     "topics": [],
     "fork": false,
     "private": false
