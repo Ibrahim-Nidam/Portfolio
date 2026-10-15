@@ -32,18 +32,21 @@ export const repos = [
     "private": false
   },
   {
-    "id": 1391434825,
-    "name": "stock_tracker",
+    "id": 1406325790,
+    "name": "Pm_planner",
     "description": null,
-    "html_url": "https://github.com/Ibrahim-Nidam/stock_tracker",
-    "language": "HTML",
+    "html_url": "https://github.com/Ibrahim-Nidam/Pm_planner",
+    "language": "JavaScript",
     "languages": [
-      "HTML",
-      "PLpgSQL"
+      "JavaScript",
+      "PLpgSQL",
+      "CSS",
+      "TypeScript",
+      "HTML"
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-10-13T21:49:57Z",
+    "updated_at": "2026-10-14T21:05:16Z",
     "topics": [],
     "fork": false,
     "private": false
@@ -62,27 +65,24 @@ export const repos = [
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-10-13T04:50:50Z",
+    "updated_at": "2026-10-14T02:58:13Z",
     "topics": [],
     "fork": false,
     "private": false
   },
   {
-    "id": 1406325790,
-    "name": "Pm_planner",
+    "id": 1391434825,
+    "name": "stock_tracker",
     "description": null,
-    "html_url": "https://github.com/Ibrahim-Nidam/Pm_planner",
-    "language": "JavaScript",
+    "html_url": "https://github.com/Ibrahim-Nidam/stock_tracker",
+    "language": "HTML",
     "languages": [
-      "JavaScript",
-      "PLpgSQL",
-      "CSS",
-      "TypeScript",
-      "HTML"
+      "HTML",
+      "PLpgSQL"
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-10-12T21:47:48Z",
+    "updated_at": "2026-10-13T21:49:57Z",
     "topics": [],
     "fork": false,
     "private": false
