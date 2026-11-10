@@ -32,6 +32,26 @@ export const repos = [
     "private": false
   },
   {
+    "id": 1406325790,
+    "name": "Pm_planner",
+    "description": null,
+    "html_url": "https://github.com/Ibrahim-Nidam/Pm_planner",
+    "language": "JavaScript",
+    "languages": [
+      "JavaScript",
+      "PLpgSQL",
+      "CSS",
+      "TypeScript",
+      "HTML"
+    ],
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-11-09T20:33:14Z",
+    "topics": [],
+    "fork": false,
+    "private": false
+  },
+  {
     "id": 1077591749,
     "name": "Portfolio",
     "description": "📱 Modern developer portfolio with automated GitHub repo syncing, multi-language filtering, dark mode, and zero backend. Built with TypeScript, Tailwind CSS, and GitHub Actions for daily auto-updates.",
@@ -45,7 +65,7 @@ export const repos = [
     ],
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-11-08T03:43:14Z",
+    "updated_at": "2026-11-09T03:56:04Z",
     "topics": [],
     "fork": false,
     "private": false
@@ -63,26 +83,6 @@ export const repos = [
     "stargazers_count": 0,
     "forks_count": 0,
     "updated_at": "2026-11-03T18:54:38Z",
-    "topics": [],
-    "fork": false,
-    "private": false
-  },
-  {
-    "id": 1406325790,
-    "name": "Pm_planner",
-    "description": null,
-    "html_url": "https://github.com/Ibrahim-Nidam/Pm_planner",
-    "language": "JavaScript",
-    "languages": [
-      "JavaScript",
-      "PLpgSQL",
-      "CSS",
-      "TypeScript",
-      "HTML"
-    ],
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "updated_at": "2026-11-03T08:07:01Z",
     "topics": [],
     "fork": false,
     "private": false
